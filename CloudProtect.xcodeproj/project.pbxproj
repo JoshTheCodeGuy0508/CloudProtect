@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E1656E092F5D2D8400F8A597 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1656E082F5D2D8400F8A597 /* CryptoSwift */; };
+		E1656E0E2F5D2FCC00F8A597 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E1656E0D2F5D2FCC00F8A597 /* GoogleSignIn */; };
+		E1656E102F5D2FCC00F8A597 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1656E0F2F5D2FCC00F8A597 /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1656E102F5D2FCC00F8A597 /* GoogleSignInSwift in Frameworks */,
 				E1656E092F5D2D8400F8A597 /* CryptoSwift in Frameworks */,
+				E1656E0E2F5D2FCC00F8A597 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +122,8 @@
 			name = CloudProtect;
 			packageProductDependencies = (
 				E1656E082F5D2D8400F8A597 /* CryptoSwift */,
+				E1656E0D2F5D2FCC00F8A597 /* GoogleSignIn */,
+				E1656E0F2F5D2FCC00F8A597 /* GoogleSignInSwift */,
 			);
 			productName = CloudProtect;
 			productReference = E1656DDD2F5D2C8B00F8A597 /* CloudProtect.app */;
@@ -203,6 +209,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				E1656E072F5D2D8400F8A597 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				E1656E0C2F5D2FCC00F8A597 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E1656DDE2F5D2C8B00F8A597 /* Products */;
@@ -592,6 +599,14 @@
 				minimumVersion = 1.9.0;
 			};
 		};
+		E1656E0C2F5D2FCC00F8A597 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -599,6 +614,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E1656E072F5D2D8400F8A597 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
 			productName = CryptoSwift;
+		};
+		E1656E0D2F5D2FCC00F8A597 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1656E0C2F5D2FCC00F8A597 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		E1656E0F2F5D2FCC00F8A597 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1656E0C2F5D2FCC00F8A597 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
